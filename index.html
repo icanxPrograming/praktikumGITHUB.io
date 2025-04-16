@@ -42,6 +42,150 @@
             tim.
           </p>
         </section>
+        <section class="content-section">
+          <h2>4. Cara Install Git</h2>
+          <p>
+            <strong>Cara Install</strong>: Git bisa di-install di berbagai
+            sistem operasi seperti <strong>Windows</strong>,
+            <strong>macOS</strong>, dan <strong>Linux</strong>. Untuk pengguna
+            Windows, kamu bisa mengunduh Git melalui situs resmi di
+            <a href="https://git-scm.com/" target="_blank">git-scm.com</a>.
+            Setelah proses unduhan selesai, lakukan instalasi seperti software
+            biasa dengan pengaturan default.
+          </p>
+
+          <p>
+            Setelah Git ter-install, pastikan Git sudah bisa digunakan dengan
+            menjalankan perintah <strong>git --version</strong> di
+            <strong>Terminal</strong> atau <strong>Command Prompt</strong>. Jika
+            muncul informasi versi Git, artinya instalasi berhasil.
+          </p>
+        </section>
+        <section class="content-section">
+          <h2>5. Konfigurasi Git Pertama Kali</h2>
+          <p>
+            <strong>Konfigurasi Git</strong>: Setelah menginstal Git, langkah
+            penting selanjutnya adalah mengatur <strong>username</strong> dan
+            <strong>email</strong> yang akan dicatat di setiap commit. Jalankan
+            perintah berikut di terminal:
+          </p>
+
+          <p>
+            <code>git config --global user.name "Nama Kamu"</code><br />
+            <code>git config --global user.email "emailkamu@gmail.com"</code>
+          </p>
+
+          <p>
+            <strong>CATATAN</strong>: Pastikan menggunakan email yang terdaftar
+            di github.
+          </p>
+        </section>
+        <section class="content-section">
+          <h2>6. Inisialisasi File dengan Git</h2>
+          <p>
+            <strong>Membuat Repository Baru dengan Git</strong>: Untuk memulai
+            project baru dengan Git, buka terminal dan arahkan ke folder project
+            kamu, lalu jalankan:
+          </p>
+
+          <p>
+            <code>git init</code>
+          </p>
+
+          <p>
+            Perintah ini akan membuat folder tersembunyi bernama
+            <strong>.git</strong> yang berfungsi sebagai database untuk
+            menyimpan seluruh riwayat perubahan project.
+          </p>
+          <hr />
+          <p>
+            <strong>Membuat Repository Baru di GitHub</strong>: Setelah
+            repository lokal dibuat menggunakan <code>git init</code>, kamu juga
+            perlu membuat repository di GitHub agar project-mu bisa disimpan
+            secara online.
+          </p>
+
+          <p>
+            Masuk ke situs
+            <a href="https://github.com/" target="_blank">GitHub</a> lalu klik
+            tombol <strong>"New Repository"</strong>. Setelah itu, isi nama
+            repository, deskripsi (opsional), lalu pilih visibilitas antara
+            <strong>Public</strong> atau <strong>Private</strong>.
+          </p>
+
+          <p>
+            Jika sudah, klik tombol <strong>Create repository</strong>. GitHub
+            akan menampilkan beberapa instruksi untuk menghubungkan repository
+            lokal dengan repository GitHub.
+          </p>
+        </section>
+        <section class="content-section">
+          <h2>7. Menambahkan File ke Git</h2>
+          <p>
+            <strong>Menambahkan File</strong>: Setelah membuat repository, kamu
+            bisa menambahkan file untuk dipantau oleh Git dengan perintah:
+          </p>
+
+          <p>
+            <code>git add nama_file</code>
+            atau untuk menambahkan semua file sekaligus:
+            <code>git add .</code>
+          </p>
+        </section>
+        <section class="content-section">
+          <h2>8. Membuat Commit</h2>
+          <p>
+            <strong>Membuat Commit</strong>: Setelah file ditambahkan, langkah
+            selanjutnya adalah menyimpan perubahan ke repository lokal
+            menggunakan perintah:
+          </p>
+
+          <p>
+            <code>git commit -m "Pesan commit yang jelas"</code>
+          </p>
+
+          <p>
+            Commit digunakan untuk mencatat snapshot project-mu saat ini,
+            lengkap dengan pesan sebagai dokumentasi perubahan.
+          </p>
+        </section>
+        <section class="content-section">
+          <h2>9. Menghubungkan Git ke Github</h2>
+          <p>
+            <strong>Menghubungkan Git ke Repository GitHub</strong>: Agar
+            project bisa dipush ke GitHub, kamu perlu menghubungkan repository
+            lokal ke repository remote dengan perintah:
+          </p>
+
+          <p>
+            <code
+              >git remote add origin
+              https://github.com/username/nama-repo.git</code
+            >
+          </p>
+
+          <p>
+            Pastikan alamat URL di atas adalah link repository kamu di GitHub.
+          </p>
+        </section>
+        <section class="content-section">
+          <h2>10. Push Project ke Github</h2>
+          <p>
+            <strong>Push ke GitHub</strong>: Untuk mengirimkan perubahan dari
+            local ke repository GitHub, gunakan perintah:
+          </p>
+
+          <p>
+            <code>git push -u origin master</code>
+            atau jika branch-mu bernama main:
+            <code>git push -u origin main</code>
+          </p>
+
+          <p>
+            Jika berhasil, maka file kamu akan tampil di GitHub dan siap untuk
+            dilihat oleh orang lain atau tim.
+          </p>
+        </section>
       </main>
     </div>
   </body>
