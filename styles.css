@@ -48,3 +48,23 @@ footer {
   background: #24292e;
   color: white;
 }
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #005fa3;
+}
